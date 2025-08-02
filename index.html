@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watterson Construction | Building Alaska's Future</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header Section -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="text-2xl font-bold font-poppins text-white">Watterson</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-sm font-medium text-gray-200 hover:text-white">About</a>
+                    <a href="#services" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Services</a>
+                    <a href="#projects" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Projects</a>
+                    <a href="#safety" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Safety</a>
+                    <a href="#community" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Community</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="focus:outline-none text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-8 pt-4 pb-8 space-y-4">
+                <a href="#about" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">About</a>
+                <a href="#services" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Services</a>
+                <a href="#projects" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Projects</a>
+                <a href="#safety" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Safety</a>
+                <a href="#community" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Community</a>
+                <a href="#contact" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen w-full flex items-center justify-center text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+            <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-architect-working-on-a-city-plan-4723-large.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+            <div class="relative z-20 text-center px-4">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 font-poppins drop-shadow-2xl">Building Alaska's Future.</h1>
+                <p class="text-xl md:text-2xl font-light drop-shadow-lg">Safely. Since 1981.</p>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+                    <a href="#about">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility Bar -->
+        <div class="bg-watterson-blue">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center py-8">
+                    <div class="p-4 fade-in-section">
+                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Top 49er</p>
+                        <p class="text-sm text-gray-300">Alaska Business</p>
+                    </div>
+                    <div class="p-4 fade-in-section">
+                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Outstanding</p>
+                        <p class="text-sm text-gray-300">U.S. Army Corps of Engineers</p>
+                    </div>
+                    <div class="p-4 fade-in-section">
+                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Safety Innovator</p>
+                        <p class="text-sm text-gray-300">2010 Award Winner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-28 bg-watterson-light fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">Our Legacy: Alaskan Grit, Family Roots</h2>
+                <!-- Timeline content will be added here -->
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">How We Build: Our Delivery Systems</h2>
+                <!-- Services content will be added here -->
+            </div>
+        </section>
+
+        <!-- Projects Carousel -->
+        <section id="projects" class="py-20 md:py-28 bg-watterson-light fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">Proven Results: Our Flagship Projects</h2>
+                <div class="relative">
+                    <div id="carousel-container" class="overflow-hidden">
+                        <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+                            <!-- Project slides will be injected by JavaScript -->
+                        </div>
+                    </div>
+                    <button id="prev-button" class="absolute top-1/2 left-0 md:-left-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10">
+                        <svg class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                    </button>
+                    <button id="next-button" class="absolute top-1/2 right-0 md:-right-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10">
+                        <svg class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Promise Section -->
+        <section id="safety" class="py-20 md:py-28 bg-watterson-blue text-white fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <div class="text-7xl md:text-9xl font-black text-watterson-gold font-poppins">12+</div>
+                        <p class="text-2xl font-bold mt-2">Years With Zero Lost-Time Accidents</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4 font-poppins">Our Unshakeable Safety Promise</h2>
+                        <p class="text-gray-300 mb-4">Safety isn't a policy; it's our culture. This commitment earned us an "Outstanding" performance rating on 8 consecutive U.S. Army Corps of Engineers projects—a distinction awarded to less than 4% of contractors nationwide.</p>
+                        <p class="text-gray-300">Our robust safety incentive program empowers every employee to be a leader in safety, protecting our team, our partners, and your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="py-20 md:py-28 fade-in-section">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-8 text-center md:text-left font-poppins">More Than a Job: Building Our Community</h2>
+                        <p class="text-gray-600 mb-4 text-center md:text-left">As a family-owned business rooted in Alaska, our commitment extends beyond construction sites. We believe in building up the communities we call home.</p>
+                        <p class="text-gray-600 font-semibold mb-6 text-center md:text-left">We are proud, long-standing supporters of Special Olympics Alaska, embracing its values of inclusion, courage, and joy through employee volunteerism and corporate support.</p>
+                        <div class="text-center md:text-left">
+                            <a href="#" class="inline-block bg-watterson-gold text-watterson-blue font-bold py-3 px-8 rounded-lg transition-colors hover:bg-yellow-500">Learn About Our Involvement</a>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1887&auto=format&fit=crop" alt="Community involvement" class="rounded-lg shadow-2xl w-full max-w-md object-cover"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-watterson-blue text-gray-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                 <div>
+                    <h3 class="text-xl font-bold text-white mb-4 font-poppins">Watterson Construction</h3>
+                    <p class="text-sm">Decades of Service. A lifetime of quality. Building Alaska's future since 1981.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-watterson-gold">About Us</a></li>
+                        <li><a href="#projects" class="hover:text-watterson-gold">Projects</a></li>
+                        <li><a href="#safety" class="hover:text-watterson-gold">Safety</a></li>
+                        <li><a href="#" class="hover:text-watterson-gold">Employment</a></li>
+                        <li><a href="#" class="hover:text-watterson-gold">Subcontractors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>Phone: (907) 563-7441</li>
+                        <li>Fax: (907) 563-7222</li>
+                        <li>info@wattersonconstruction.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Location</h3>
+                    <p class="text-sm">
+                        6500 Interstate Circle<br/>
+                        Anchorage, Alaska 99518
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2024 Watterson Construction Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
