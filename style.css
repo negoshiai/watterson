@@ -1,0 +1,36 @@
+/* Custom Tailwind CSS Configuration via @layer */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* Initial state for scroll animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Final state for scroll animations */
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom color classes for easier use */
+.text-watterson-blue { color: #0A2342; }
+.bg-watterson-blue { background-color: #0A2342; }
+.text-watterson-gold { color: #D4AF37; }
+.bg-watterson-gold { background-color: #D4AF37; }
+.bg-watterson-light { background-color: #F8F9FA; }
