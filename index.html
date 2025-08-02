@@ -3,135 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watterson Construction | Building Alaska's Future</title>
+    <title>Watterson Construction | Building Alaska's Future Since 1981</title>
+    <meta name="description" content="Watterson Construction is a leading general contractor in Alaska, specializing in Design/Build, CM @ Risk, and Design-Bid-Build projects with an award-winning safety record.">
     
-    <!-- Tailwind CSS via CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
-    
-    <!-- Custom Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white font-inter antialiased">
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="#hero" class="text-2xl font-bold font-poppins text-white">Watterson</a>
+                <a href="#hero" class="nav-link text-2xl font-bold font-poppins text-white">Watterson</a>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link text-sm font-medium text-gray-200 hover:text-white">About</a>
-                    <a href="#services" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Services</a>
-                    <a href="#projects" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Projects</a>
-                    <a href="#safety" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Safety</a>
-                    <a href="#community" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Community</a>
-                    <a href="#contact" class="nav-link text-sm font-medium text-gray-200 hover:text-white">Contact</a>
+                    <a href="#about" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">About</a>
+                    <a href="#services" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">Projects</a>
+                    <a href="#safety" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">Safety</a>
+                    <a href="#community" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">Community</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-gray-200 hover:text-white transition-colors">Contact</a>
                 </nav>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="focus:outline-none text-white">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <button id="menu-btn" class="focus:outline-none text-white">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <div class="px-8 pt-4 pb-8 space-y-4">
-                <a href="#about" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">About</a>
-                <a href="#services" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Services</a>
-                <a href="#projects" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Projects</a>
-                <a href="#safety" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Safety</a>
-                <a href="#community" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Community</a>
-                <a href="#contact" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-watterson-gold">Contact</a>
-            </div>
-        </div>
     </header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-white md:hidden">
+        <div class="pt-24 px-8 space-y-4">
+            <a href="#about" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">About</a>
+            <a href="#services" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">Services</a>
+            <a href="#projects" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">Projects</a>
+            <a href="#safety" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">Safety</a>
+            <a href="#community" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">Community</a>
+            <a href="#contact" class="nav-link block w-full text-left py-3 text-lg font-medium text-gray-700 hover:text-[#D4AF37]">Contact</a>
+        </div>
+    </div>
 
     <main>
         <!-- Hero Section -->
         <section id="hero" class="relative h-screen w-full flex items-center justify-center text-white overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
-            <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-architect-working-on-a-city-plan-4723-large.mp4" type="video/mp4"/>
+            <video autoPlay loop muted playsInline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-architect-working-on-a-city-plan-4723-large.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div class="relative z-20 text-center px-4">
+            <div class="relative z-20 text-center px-4 animate-fade-in">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 font-poppins drop-shadow-2xl">Building Alaska's Future.</h1>
                 <p class="text-xl md:text-2xl font-light drop-shadow-lg">Safely. Since 1981.</p>
-                <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
-                    <a href="#about">
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in-delayed">
+                    <a href="#about" class="nav-link">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 animate-bounce"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Credibility Bar -->
-        <div class="bg-watterson-blue">
+        <div class="bg-[#0A2342]">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center py-8">
-                    <div class="p-4 fade-in-section">
-                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Top 49er</p>
-                        <p class="text-sm text-gray-300">Alaska Business</p>
-                    </div>
-                    <div class="p-4 fade-in-section">
-                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Outstanding</p>
-                        <p class="text-sm text-gray-300">U.S. Army Corps of Engineers</p>
-                    </div>
-                    <div class="p-4 fade-in-section">
-                        <p class="text-2xl font-bold text-watterson-gold font-poppins">Safety Innovator</p>
-                        <p class="text-sm text-gray-300">2010 Award Winner</p>
-                    </div>
+                    <div class="p-4"><p class="text-2xl font-bold text-[#D4AF37] font-poppins">Top 49er</p><p class="text-sm text-gray-300">Alaska Business</p></div>
+                    <div class="p-4"><p class="text-2xl font-bold text-[#D4AF37] font-poppins">Outstanding</p><p class="text-sm text-gray-300">U.S. Army Corps of Engineers</p></div>
+                    <div class="p-4"><p class="text-2xl font-bold text-[#D4AF37] font-poppins">Safety Innovator</p><p class="text-sm text-gray-300">2010 Award Winner</p></div>
                 </div>
             </div>
         </div>
 
         <!-- About Section -->
-        <section id="about" class="py-20 md:py-28 bg-watterson-light fade-in-section">
+        <section id="about" class="animated-section py-20 md:py-28 bg-[#F8F9FA]">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">Our Legacy: Alaskan Grit, Family Roots</h2>
-                <!-- Timeline content will be added here -->
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 md:py-28 fade-in-section">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">How We Build: Our Delivery Systems</h2>
-                <!-- Services content will be added here -->
-            </div>
-        </section>
-
-        <!-- Projects Carousel -->
-        <section id="projects" class="py-20 md:py-28 bg-watterson-light fade-in-section">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-16 text-center font-poppins">Proven Results: Our Flagship Projects</h2>
-                <div class="relative">
-                    <div id="carousel-container" class="overflow-hidden">
-                        <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
-                            <!-- Project slides will be injected by JavaScript -->
-                        </div>
-                    </div>
-                    <button id="prev-button" class="absolute top-1/2 left-0 md:-left-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10">
-                        <svg class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-                    </button>
-                    <button id="next-button" class="absolute top-1/2 right-0 md:-right-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10">
-                        <svg class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-                    </button>
+                <h2 class="section-title">Our Legacy: Alaskan Grit, Family Roots</h2>
+                <div id="history-timeline" class="relative max-w-4xl mx-auto">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 hidden md:block" aria-hidden="true"></div>
+                    <!-- History items will be injected here by JS -->
                 </div>
             </div>
         </section>
 
-        <!-- Safety Promise Section -->
-        <section id="safety" class="py-20 md:py-28 bg-watterson-blue text-white fade-in-section">
+        <!-- Services Section -->
+        <section id="services" class="animated-section py-20 md:py-28">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                <h2 class="section-title">How We Build: Our Delivery Systems</h2>
+                <div id="services-grid" class="grid md:grid-cols-3 gap-12">
+                    <!-- Services will be injected here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="animated-section py-20 md:py-28 bg-[#F8F9FA]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Proven Results: Our Flagship Projects</h2>
+                <div class="relative">
+                    <div class="overflow-hidden">
+                        <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+                            <!-- Carousel items will be injected here by JS -->
+                        </div>
+                    </div>
+                    <button id="prev-btn" class="absolute top-1/2 left-0 md:-left-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button>
+                    <button id="next-btn" class="absolute top-1/2 right-0 md:-right-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section id="safety" class="animated-section py-20 md:py-28 bg-[#0A2342] text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="text-center md:text-left">
-                        <div class="text-7xl md:text-9xl font-black text-watterson-gold font-poppins">12+</div>
+                        <div class="text-7xl md:text-9xl font-black text-[#D4AF37] font-poppins">12+</div>
                         <p class="text-2xl font-bold mt-2">Years With Zero Lost-Time Accidents</p>
                     </div>
                     <div>
@@ -144,15 +138,15 @@
         </section>
 
         <!-- Community Section -->
-        <section id="community" class="py-20 md:py-28 fade-in-section">
-             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="community" class="animated-section py-20 md:py-28">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl md:text-4xl font-bold text-watterson-blue mb-8 text-center md:text-left font-poppins">More Than a Job: Building Our Community</h2>
+                        <h2 class="section-title">More Than a Job: Building Our Community</h2>
                         <p class="text-gray-600 mb-4 text-center md:text-left">As a family-owned business rooted in Alaska, our commitment extends beyond construction sites. We believe in building up the communities we call home.</p>
                         <p class="text-gray-600 font-semibold mb-6 text-center md:text-left">We are proud, long-standing supporters of Special Olympics Alaska, embracing its values of inclusion, courage, and joy through employee volunteerism and corporate support.</p>
                         <div class="text-center md:text-left">
-                            <a href="#" class="inline-block bg-watterson-gold text-watterson-blue font-bold py-3 px-8 rounded-lg transition-colors hover:bg-yellow-500">Learn About Our Involvement</a>
+                            <button class="inline-block bg-[#D4AF37] text-[#0A2342] font-bold py-3 px-8 rounded-lg transition-colors hover:bg-yellow-500">Learn About Our Involvement</button>
                         </div>
                     </div>
                     <div class="order-1 md:order-2 flex justify-center">
@@ -164,21 +158,21 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-watterson-blue text-gray-300">
+    <footer id="contact" class="bg-[#0A2342] text-gray-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                 <div>
+                <div>
                     <h3 class="text-xl font-bold text-white mb-4 font-poppins">Watterson Construction</h3>
                     <p class="text-sm">Decades of Service. A lifetime of quality. Building Alaska's future since 1981.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#about" class="hover:text-watterson-gold">About Us</a></li>
-                        <li><a href="#projects" class="hover:text-watterson-gold">Projects</a></li>
-                        <li><a href="#safety" class="hover:text-watterson-gold">Safety</a></li>
-                        <li><a href="#" class="hover:text-watterson-gold">Employment</a></li>
-                        <li><a href="#" class="hover:text-watterson-gold">Subcontractors</a></li>
+                        <li><a href="#about" class="nav-link hover:text-[#D4AF37]">About Us</a></li>
+                        <li><a href="#projects" class="nav-link hover:text-[#D4AF37]">Projects</a></li>
+                        <li><a href="#safety" class="nav-link hover:text-[#D4AF37]">Safety</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Employment</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Subcontractors</a></li>
                     </ul>
                 </div>
                 <div>
@@ -191,10 +185,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-white mb-4">Location</h3>
-                    <p class="text-sm">
-                        6500 Interstate Circle<br/>
-                        Anchorage, Alaska 99518
-                    </p>
+                    <p class="text-sm">6500 Interstate Circle<br/>Anchorage, Alaska 99518</p>
                 </div>
             </div>
             <div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm">
@@ -203,7 +194,8 @@
         </div>
     </footer>
 
-    <!-- Custom JavaScript -->
+    <!-- Custom JS -->
     <script src="script.js"></script>
+
 </body>
 </html>
